@@ -35,7 +35,7 @@ function Header() {
               <PersonIcon />
               <p className="text-[14px] font-bold">Sign in</p>
             </div>
-            <div className="flex items-center space-x-1 py-2 px-4 bg-black text-white rounded-full ml-4 cursor-pointer">
+            <div className="flex items-center space-x-1 py-2 px-4 bg-black text-white rounded-full ml-4 cursor-pointer hover:text-gray-400 duration-200">
               <p className="text-[14px] font-bold">Sign up for free</p>
             </div>
           </div>
