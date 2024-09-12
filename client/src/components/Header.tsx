@@ -1,11 +1,80 @@
-import React from 'react'
+import React from "react";
+import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
+import LanguageIcon from "@mui/icons-material/Language";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import PersonIcon from "@mui/icons-material/Person";
 
 function Header() {
   return (
     <div>
-      This is header
+      <div className="border-b-[1px] border-gray-200 py-3">
+        <div className="w-[1300px] m-auto flex items-center justify-between">
+          <div>
+            <img
+              src="https://a.storyblok.com/f/165154/261x55/ecf04f407f/gelato_logo_black.svg"
+              alt=""
+              className="h-[27px] cursor-pointer"
+            />
+          </div>
+          <div className="flex items-center">
+            <div className="flex items-center space-x-1 py-[5px] px-4 rounded-full cursor-pointer hover:bg-gray-200 duration-200">
+              <HeadsetMicIcon />
+              <p className="text-[14px] font-bold">Contact us</p>
+            </div>
+            <div className="flex items-center space-x-1 py-[5px] px-4 rounded-full cursor-pointer hover:bg-gray-200 duration-200">
+              <LanguageIcon />
+              <p className="text-[14px] font-bold">IN/INR</p>
+              <KeyboardArrowDownIcon />
+            </div>
+            <div className="flex items-center space-x-1 py-[5px] px-4 rounded-full cursor-pointer hover:bg-gray-200 duration-200">
+              <ShoppingCartIcon />
+              <p className="text-[14px] font-bold">Cart</p>
+            </div>
+            <div className="flex items-center space-x-1 py-[5px] px-4 rounded-full cursor-pointer hover:bg-gray-200 duration-200">
+              <PersonIcon />
+              <p className="text-[14px] font-bold">Sign in</p>
+            </div>
+            <div className="flex items-center space-x-1 py-2 px-4 bg-black text-white rounded-full ml-4 cursor-pointer">
+              <p className="text-[14px] font-bold">Sign up for free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-b-[1px] border-gray-200">
+        <div className="w-[1300px] m-auto flex items-center">
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">Products</p>
+            <KeyboardArrowDownIcon sx={{fontSize:"20px"}}/>
+          </div>
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">Start selling</p>
+            <KeyboardArrowDownIcon sx={{fontSize:"20px"}}/>
+          </div>
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">Tools and apps</p>
+            <KeyboardArrowDownIcon sx={{fontSize:"20px"}}/>
+          </div>
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">Pricing</p>
+            <KeyboardArrowDownIcon sx={{fontSize:"20px"}}/>
+          </div>
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">Resources</p>
+            <KeyboardArrowDownIcon sx={{fontSize:"20px"}}/>
+          </div>
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">Pro sellers</p>
+          </div>
+          <div className="py-3 px-4 flex items-center space-x-2 cursor-pointer hover:bg-gray-200 duration-200">
+            <p className="text-[14px] font-bold">GellatoConnect</p>
+            <KeyboardArrowDownIcon sx={{fontSize:"20px"}}/>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;
