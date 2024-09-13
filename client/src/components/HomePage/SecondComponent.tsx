@@ -5,19 +5,19 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 function SecondComponent() {
   return (
     <div>
-      <div className="w-[1300px] m-auto py-8">
+      <div className="md:w-[650px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1300px] m-auto py-8">
         <div className="text-center font-bold text-[60px]">
           Why choose Gelato
         </div>
-        <div className="py-10 flex justify-between">
+        <div className="py-10 flex items-center justify-between">
           <div>
             <img
               src="https://a.storyblok.com/f/165154/1450x1450/97cf3c3c7e/0341_2024-brand-vi-rollout-dedicated-hero-1450x1450-1.png/m/1000x0/"
               alt=""
-              className="w-[650px]"
+              className="lg:w-[450px] xl:w-[600px] 2xl:w-[650px]"
             />
           </div>
-          <div className="w-[650px] px-10 space-y-5">
+          <div className="lg:w-[450px] xl:w-[500px] 2xl:w-[650px] px-10 space-y-5">
             {data?.map((item, index) => (
               <div key={index} className="space-y-1">
                 <div className="space-x-1">
@@ -32,7 +32,7 @@ function SecondComponent() {
       </div>
 
       <div className="bg-[#ffedd5] bg-opacity-25 flex items-center justify-center">
-        <div className="w-[650px] px-8 py-8">
+        <div className="md:w-[350px] lg:w-[450px] xl:w-[600px] 2xl:w-[650px] px-8 py-8">
           <p className="text-[20px] text-black font-medium">
             For print on demand sellers
           </p>
@@ -53,7 +53,7 @@ function SecondComponent() {
           <img
             src="https://a.storyblok.com/f/165154/1200x1200/35ff04c4c9/cc-55_marketing-assets-for-personalization-studio.gif/m/"
             alt=""
-            className="w-[650px]"
+            className="md:w-[350px] lg:w-[450px] xl:w-[500px] 2xl:w-[650px]"
           />
         </div>
       </div>

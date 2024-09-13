@@ -3,16 +3,16 @@ import React from "react";
 function ThirdComponent() {
   return (
     <div>
-      <div className="w-[1300px] m-auto py-8">
+      <div className="md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1300px] m-auto py-8">
         <div className="py-10 flex items-center justify-between">
           <div>
             <img
               src="https://a.storyblok.com/f/165154/1080x1080/6120ad9f16/helatoconnect-lp-hero-gif-updated_2-compressed.gif/m/"
               alt=""
-              className="w-[650px]"
+              className="md:w-[350px] lg:w-[450px] xl:w-[600px] 2xl:w-[650px]"
             />
           </div>
-          <div className="w-[650px] px-10 py-8">
+          <div className="md:w-[350px] lg:w-[450px] xl:w-[500px] 2xl:w-[650px] px-10 py-8">
             <p className="text-[20px] text-black font-medium">
               For print producers
             </p>
@@ -32,7 +32,7 @@ function ThirdComponent() {
       </div>
 
       <div className="bg-[#ffedd5] bg-opacity-25 py-10 flex items-center justify-center">
-        <div className="w-[650px] px-8 py-8">
+        <div className="md:w-[350px] lg:w-[500px] xl:w-[500px] 2xl:w-[650px] px-8 py-8">
           <p className="text-[70px] font-bold leading-[70px] py-1">
             Meet GelatoConnect at Printing United
           </p>
@@ -52,7 +52,7 @@ function ThirdComponent() {
           <img
             src="https://a.storyblok.com/f/165154/1280x720/5d47159829/gelato-printing-united-2024.png/m/1000x0/"
             alt=""
-            className="w-[650px]"
+            className="md:w-[350px] lg:w-[400px] xl:w-[600px] 2xl:w-[650px]"
           />
         </div>
       </div>
