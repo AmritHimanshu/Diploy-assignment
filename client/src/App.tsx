@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage/HomePage";
 
@@ -9,6 +10,7 @@ function App() {
         <Header />
       </div>
       <HomePage />
+      <Footer />
     </div>
   );
 }
