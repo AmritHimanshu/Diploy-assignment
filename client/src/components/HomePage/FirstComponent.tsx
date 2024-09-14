@@ -28,7 +28,7 @@ function FirstComponent() {
             </button>
           </div>
 
-          <div className="cursor-pointer text-gray-500 hover:text-gray-400">
+          <div className="cursor-pointer text-gray-500 hover:text-gray-400 w-[180px] md:w-[200px]">
             <img
               src="https://a.storyblok.com/f/165154/300x86/7d28c66657/shopify_monotone_black.svg"
               alt=""
