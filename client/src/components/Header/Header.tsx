@@ -10,7 +10,7 @@ import HeaderSmallScreen from "./HeaderSmallScreen";
 function Header() {
   const menuRef = useRef<HTMLDivElement>(null);
 
-  const [menuState, setMenuState] = useState(true);
+  const [menuState, setMenuState] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -44,12 +44,12 @@ function Header() {
           </div>
 
           <div
-            className={`fixed top-0 ${
-              menuState ? "left-0" : "-left-[510px]"
+            className={`block xl:hidden fixed top-0 ${
+              menuState ? "left-0" : "-left-[910px]"
             } duration-200 w-full bg-black bg-opacity-20`}
           >
             <div ref={menuRef} className="w-[330px]">
-              <HeaderSmallScreen />
+              <HeaderSmallScreen setMenuState={setMenuState}/>
             </div>
           </div>
 
